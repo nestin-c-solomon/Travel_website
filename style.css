@@ -1,0 +1,171 @@
+.logo{
+    width: 188px;
+}
+
+/* navbar class */
+.navbarcls{  
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.discover{
+    margin-left: 275px;
+}
+.cart{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.cart:hover{
+    background-color: aliceblue;
+}
+
+/* where-to */
+.where{
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+}
+
+.wheretoitems{
+    display: flex;
+    justify-content: space-around;
+}
+.wheretoitemslist{
+    text-decoration: none;
+}
+.wheretoitemslist:hover{
+    text-decoration: underline;
+}
+
+/* Build a trip */
+.buildatrip{
+    font-family: 'Kanit', sans-serif;
+    height: 450px;
+    width: 100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+/* Advertisement */
+.advertisement{
+    /* height: 620px; */  /* 450 */
+    background-color: yellow;
+}
+.adimg{
+    width: 90%;
+    height: 90%;
+}
+
+/* Top things */
+.topthings{
+    font-family: 'Mukta', sans-serif;
+}
+
+.overall{
+    transition: transform .2s;
+}
+.overall:hover{
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+/* ways-to-kochi */
+.ways-to-kochi{
+    font-family: 'Mukta', sans-serif;
+
+}
+/* .images{
+    height: 100%;
+} */
+.ways-kochi{
+    text-decoration: none;
+    color: black;
+}
+.ways-kochi:hover{
+    text-decoration: underline;
+}
+/* goto */
+.goto{
+    /* font-family: 'Kanit', sans-serif; */
+    font-family: 'Mukta', sans-serif;
+}
+.gotoimg{
+    height: 80vh;
+    background-image: url("./images/goto3.jpg");
+    background-size: 100% 100%;
+    
+}
+
+/* More to explore */
+.more-to{
+    font-family: 'Mukta', sans-serif;
+}
+.imagz{
+    height: 40vh;
+}
+.moretocards{
+    text-decoration: none;
+}
+
+/* Next trip */
+.next-trip, .destinations{
+    font-family: 'Mukta', sans-serif;
+}
+.nes{
+    text-decoration: none;
+}
+
+.sslink, .ftlinks{
+    text-decoration: none;
+    color: black;
+}
+/* travellers choice */
+.travellers-choice{
+    /* background-color: #FFCC70; */
+    background-color: thistle;
+}
+
+/* Footer */
+.trending{
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Tabs------------------------ */
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 400px; */
+}
+.tabs-label{
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.tabs-radio{
+    display: none;
+}
+.tabs-content{
+    order: 1; /* group same order items together */
+    width: 100%;
+    display: none;
+}
+.tabs-radio:checked+.tabs-label{
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.tabs-radio:checked+.tabs-label+.tabs-content{
+    display: initial;
+}
+.ftlinks:hover{
+    text-decoration: underline;
+}
+.ftlinks2{
+    color: black;
+}
+.uparrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

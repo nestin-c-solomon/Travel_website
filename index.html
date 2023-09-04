@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Mukta:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container" id="container">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbarcls fs-6 fw-bold">
+
+            <!-- Logo -->
+            <img src="./images/logo.svg" class="logo" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Menu -->
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#donate">Donate</a></li>
+                            <li><a class="dropdown-item" href="#go-to">Go-to-guide</a></li>
+                            <li><a class="dropdown-item" href="#more-to">Explore</a></li>
+                            <li><a class="dropdown-item" href="#destinations">Top Destinations</a></li>
+                            <li><a class="dropdown-item" href="#trending">Trending & contacts</a></li>
+                        </ul>
+                    </li>
+                    <!-- Discover -->
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Discover
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Traveller's Choice</a></li>
+                            <li><a class="dropdown-item" href="#">Travel Story</a></li>
+                        </ul>
+                    </li>
+                    <!-- Trips -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Trips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Plan a trip</a></li>
+                            <li><a class="dropdown-item" href="#">Hire a trip designer</a></li>
+                        </ul>
+                    </li>
+                    <!-- Community -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Write a review</a></li>
+                            <li><a class="dropdown-item" href="#">Post photos</a></li>
+                            <li><a class="dropdown-item" href="#">Add a place</a></li>
+                            <li><a class="dropdown-item" href="#">View Travel Forums</a></li>
+                        </ul>
+                    </li>
+                    <!-- More -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Flights</a></li>
+                            <li><a class="dropdown-item" href="#">Cruises</a></li>
+                            <li><a class="dropdown-item" href="#">Rental Cars</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Cart -->
+            <div class="cart rounded-pill me-5">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="" class="cart text-black">Cart</a>
+            </div>
+            <!-- Sign-in btn -->
+            <button type="button" class="btn btn-dark rounded-pill">Sign in</button>
+
+        </nav>
+
+        <!-- where-to -->
+        <div class="row">
+            <div class="col-12">
+                <p class="where  text-center mt-5">Where to?</p>
+            </div>
+            <div class="row">
+                <div class="wheretoitems text-center">
+                    <a href="" class="text-dark wheretoitemslist ">Hotels</a>
+                    <a href="" class="text-dark wheretoitemslist ">Things to Do</a>
+                    <a href="" class="text-dark wheretoitemslist ">Restaurants</a>
+                </div>
+            </div>
+            <form>
+                <div class="mb-3 mt-4" style="display:flex;justify-content: center;">
+                    <input type="text" class="form-control rounded-pill w-50 h-100" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Place to go, things to do, hotels...">
+                    <button type="submit" class="btn btn-success rounded-pill">Submit</button>
+            </form>
+        </div>
+
+        <!-- Gradient............................. -->
+        <section class="buildtrip" id="buildatrip">
+            <div class="row mt-4 ms-3 me-3">
+                <div class="buildatrip text-center">
+                    <p class="text-light mt-5">Powered by AI <span
+                            style="background-color: white; color: black;">BETA</span></p>
+                    <h1 class="fs-1 fw-bold mt-5">Build a trip in minutes</h1>
+                    <p class="mt-5 fs-4">Get a personalized itinerary just for <br> you, guided by traveler tips and
+                        <br> reviews.
+                    </p>
+                    <button type="button" class="btn btn-dark rounded-pill">Start a trip with AI</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advertisement...................... -->
+        <section class="advertisement mt-5" id="donate">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./images/advertisement.jpg" class="mt-3 ms-3 adimg" alt="">
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <div class="row">
+                        <div style="width: 100%; height: 15%; text-align: center;">
+                            <figure>
+                                <img src="./images/logo2svg.svg" style="height: 20%; width: 20%;" alt="">
+                                <figcaption class="fs-6">Tripadvisor Foundation</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row h-75">
+                        <div class="col text-center">
+                            <h1>Help Maui & others around the world</h1>
+                            <p>The Tripadvisor Foundation is matching donations to World Central Kitchen’s Climate
+                                Disaster Fund. Your support helps disaster responses not only in Maui, but worldwide.
+                            </p>
+                            <button type="button" class="btn btn-dark rounded-pill">Donate now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Top things to do......................-->
+        <section class="topthings mt-5">
+            <div class="row">
+                <h3 class="fw-bold">Top Things to Do by category</h3>
+                <p class="fs-6">Travelers' Choice Best of the Best winners</p>
+            </div>
+            <!-- Large screen -->
+            <div class="d-none d-sm-block">
+                <div class="row">
+                    <div class="col-lg-3 shadow-lg">
+                        <!-- overall -->
+                        <div class="overall">
+                            <div class="card text-bg-light">
+                                <img src="./images/overall.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <a href="">
+                                        <h1
+                                            class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                            Top Overall</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 shadow-lg">
+                        <!-- Bucket list -->
+                        <div class="overall">
+                            <div class="card text-bg-light">
+                                <img src="./images/bucketlist.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <a href="">
+                                        <h1
+                                            class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                            Bucket List</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 shadow-lg">
+                        <div class="overall">
+                            <!-- Food and culinary -->
+                            <div class="card text-bg-light">
+                                <img src="./images/food.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <a href="">
+                                        <h1
+                                            class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                            Food & Culinary</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 shadow-lg">
+                        <div class="overall">
+                            <!-- Nature -->
+                            <div class="card text-bg-light">
+                                <img src="./images/nature.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <a href="">
+                                        <h1
+                                            class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-1">
+                                            Nature & Outdoor</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Small screen -->
+            <div class="d-block d-sm-none">
+                <div class="row">
+                    <div id="carouselExampleMoreToSmallWaysSmallWaysLargeSmallTopThings"
+                        class="carousel carousel-dark slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- Overall -->
+                                <div class="card text-bg-light">
+                                    <img src="./images/overall.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <a href="">
+                                            <h1
+                                                class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                Top Overall</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Bucket list -->
+                                <div class="card text-bg-light">
+                                    <img src="./images/bucketlist.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <a href="">
+                                            <h1
+                                                class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                Bucket List</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Food and culinary -->
+                                <div class="card text-bg-light">
+                                    <img src="./images/food.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <a href="">
+                                            <h1
+                                                class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                Food & Culinary</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Nature -->
+                                <div class="card text-bg-light">
+                                    <img src="./images/nature.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <a href="">
+                                            <h1
+                                                class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-1">
+                                                Nature & Outdoor</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleMoreToSmallWaysSmallWaysLargeSmallTopThings"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleMoreToSmallWaysSmallWaysLargeSmallTopThings"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ways to our kochi............................. -->
+        <section class="ways-to-kochi " style="margin-top: 100px;">
+            <div class="row">
+                <h3 class="fw-bold">Ways to tour Kochi (Cochin)</h3>
+                <p class="fs-6">Book these experiences for a close-up look at Kochi (Cochin).</p>
+            </div>
+            <!-- Large screen -->
+            <div class="d-none d-sm-block">
+                <div id="carouselExampleMoreToSmallWaysSmallWaysLarge" class="carousel carousel-dark slide">
+                    <div class="carousel-inner">
+                        <!-- slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card  border border-0 overall">
+                                        <img src="./images/ways-kochi/1.jpg" class="card-img-top images " alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Half Day Village Backwater Eco Country Boat
+                                                    Cruise :Group Tour from Fort <br> Cochin <br><br> from $33 per adult
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card  border border-0 overall">
+                                        <img src="./images/ways-kochi/2.jpg" class="card-img-top images " alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">5 Days Private Kerala Tour <br> Package by
+                                                    Saffron <br> India <br><br> from $298 per adult</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card  border border-0 overall">
+                                        <img src="./images/ways-kochi/3.jpg" class="card-img-top images " alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Kochi Private Tour:Kerala <br> Backwater
+                                                    Houseboat Day <br> Cruise in Aleppey <br><br> from $160 per adult
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card  border border-0 overall">
+                                        <img src="./images/ways-kochi/4.jpg" class="card-img-top images " alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Adventure Tuk Tuk Tour in kochi - <br> A
+                                                    private Guided Tour with Hotel <br> Pick up <br><br> from $14 per
+                                                    adult</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card border border-0 overall">
+                                        <img src="./images/ways-kochi/5.jpg" class="card-img-top images w-100"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">5 Days Kerala Tour Package - <br> Private
+                                                    Tour With Exclusive <br> Houseboat Stay <br><br> from $355 per adult
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card border border-0 overall">
+                                        <img src="./images/ways-kochi/6.jpg" class="card-img-top images w-100"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Best of Kochi ! A private tour <br> in
+                                                    Kochi with a <br> local guide! <br><br> from $51 per adult</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card border border-0 overall">
+                                        <img src="./images/ways-kochi/7.jpg" class="card-img-top images w-100"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Kochi Tour Guide - A Heritage <br> walking
+                                                    tour in Fort Kochi and <br> Mattanchery! <br><br> from $20 per adult
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card border border-0 overall">
+                                        <img src="./images/ways-kochi/8.jpg" class="card-img-top images w-100"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">3 Nights 4 Dats Munnar Aleppey <br> Private
+                                                    Tour With Exclusive <br> Houseboat Stay <br><br> from $258 per adult
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide 3 -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card border border-0 overall">
+                                        <img src="./images/ways-kochi/9.jpg" class="card-img-top images w-100"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Kochi House Boat <br> Day Tour <br>
+                                                    <br><br> from $110 per adult
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 shadow-lg">
+                                    <div class="card border border-0 overall">
+                                        <img src="./images/ways-kochi/10.jpg" class="card-img-top images w-100"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="ways-kochi">
+                                                <p class="card-text fw-bold">Private Day Trip <br> to Munnar from <br>
+                                                    Kochi (Cochin) <br><br> from $110 per adult</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleMoreToSmallWaysSmallWaysLarge" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleMoreToSmallWaysSmallWaysLarge" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Small screen -->
+            <div class="d-block d-sm-none">
+                <div class="row">
+                    <div id="carouselExampleMoreToSmallWaysSmall" class="carousel carousel-dark slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card  border border-0 overall">
+                                    <img src="./images/ways-kochi/1.jpg" class="card-img-top images " alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Half Day Village Backwater Eco Country Boat
+                                                Cruise :Group Tour from Fort <br> Cochin <br><br> from $33 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card  border border-0 overall">
+                                    <img src="./images/ways-kochi/2.jpg" class="card-img-top images " alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">5 Days Private Kerala Tour <br> Package by
+                                                Saffron <br> India <br><br> from $298 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card  border border-0 overall">
+                                    <img src="./images/ways-kochi/3.jpg" class="card-img-top images " alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Kochi Private Tour:Kerala <br> Backwater
+                                                Houseboat Day <br> Cruise in Aleppey <br><br> from $160 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card  border border-0 overall">
+                                    <img src="./images/ways-kochi/4.jpg" class="card-img-top images " alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Adventure Tuk Tuk Tour in kochi - <br> A
+                                                private Guided Tour with Hotel <br> Pick up <br><br> from $14 per adult
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border border-0 overall">
+                                    <img src="./images/ways-kochi/5.jpg" class="card-img-top images w-100" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">5 Days Kerala Tour Package - <br> Private Tour
+                                                With Exclusive <br> Houseboat Stay <br><br> from $355 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border border-0 overall">
+                                    <img src="./images/ways-kochi/6.jpg" class="card-img-top images w-100" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Best of Kochi ! A private tour <br> in Kochi
+                                                with a <br> local guide! <br><br> from $51 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border border-0 overall">
+                                    <img src="./images/ways-kochi/7.jpg" class="card-img-top images w-100" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Kochi Tour Guide - A Heritage <br> walking tour
+                                                in Fort Kochi and <br> Mattanchery! <br><br> from $20 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border border-0 overall">
+                                    <img src="./images/ways-kochi/8.jpg" class="card-img-top images w-100" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">3 Nights 4 Dats Munnar Aleppey <br> Private
+                                                Tour With Exclusive <br> Houseboat Stay <br><br> from $258 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border border-0 overall">
+                                    <img src="./images/ways-kochi/9.jpg" class="card-img-top images w-100" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Kochi House Boat <br> Day Tour <br> <br><br>
+                                                from $110 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border border-0 overall">
+                                    <img src="./images/ways-kochi/10.jpg" class="card-img-top images w-100" alt="...">
+                                    <div class="card-body">
+                                        <a href="" class="ways-kochi">
+                                            <p class="card-text fw-bold">Private Day Trip <br> to Munnar from <br> Kochi
+                                                (Cochin) <br><br> from $110 per adult</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleMoreToSmallWaysSmall" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleMoreToSmallWaysSmall" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Go to guide -->
+        <section class="go-to" id="go-to" style="margin-top: 80px;">
+            <div class="row mt-5">
+                <div class="gotoimg mx-auto position-relative">
+                    <h1 class="goto position-absolute bottom-0 start-0 fw-bold ms-3 text-light"
+                        style="margin-bottom: 100px;">Your go-to-guide for fall</h1>
+                    <p class="goto position-absolute bottom-0 start-0 fw-bold ms-3 text-light"
+                        style="margin-bottom: 70px;">How to take on the season—at home and afar</p>
+                    <button type="button" class="btn btn-light rounded-pill position-absolute bottom-0 start-0 ms-3"
+                        style="margin-bottom: 10px;">Read more</button>
+                </div>
+            </div>
+        </section> <!-- #fff7e1    -->
+
+        <!-- More to explore Large screen.......................-->
+        <section class="more-to" id="more-to" style="margin-top: 80px;">
+            <div class="row">
+                <h3 class="fw-bold">More to explore</h3>
+            </div>
+            <div class="d-none d-sm-block">
+                <div style="background-color: #fff7e1;" class="p-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="" class="moretocards">
+                                <div class="overall">
+                                    <div class="card">
+                                        <img src="./images/more-to/1.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text fw-bold text-center">Do Paris like a pro: A local shares
+                                                the neighborhoods you can't miss</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" class="moretocards">
+                                <div class="overall">
+                                    <div class="card">
+                                        <img src="./images/more-to/2.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text fw-bold text-center">Where to eat in Chicago when the
+                                                top tables <br> are booked</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" class="moretocards">
+                                <div class="overall">
+                                    <div class="card">
+                                        <img src="./images/more-to/3.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text fw-bold text-center">Your three-day guide to <br> Cancun
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Small screen -->
+            <div class="d-block d-sm-none">
+                <div class="row">
+                    <div id="carouselExampleMoreToSmall" class="carousel carousel-dark slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="" class="moretocards">
+                                    <div class="overall">
+                                        <div class="card">
+                                            <img src="./images/more-to/1.jpg" class="card-img-top imagz" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold text-center">Do Paris like a pro: A local
+                                                    shares the neighborhoods you can't miss</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="" class="moretocards">
+                                    <div class="overall">
+                                        <div class="card">
+                                            <img src="./images/more-to/2.jpg" class="card-img-top imagz" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold text-center">Where to eat in Chicago when
+                                                    the top tables <br> are booked</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="" class="moretocards">
+                                    <div class="overall">
+                                        <div class="card">
+                                            <img src="./images/more-to/3.jpg" class="card-img-top imagz" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text fw-bold text-center">Your three-day guide to <br>
+                                                    Cancun</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleMoreToSmall"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleMoreToSmall"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Trip......................................... -->
+        <section class="next-trip" style="margin-top: 80px;">
+            <h1 class="fw-bold">Dream Your Next Trip</h1>
+            <h3>Weekend getaways from Kochi (Cochin)</h3>
+            <!-- Large Screen -->
+            <div class="d-none d-sm-block">
+                <div id="carouselExampleNextTripLarge" class="carousel slide mt-3">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/1.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Bengaluru,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/2.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Trivandrum,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/3.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2 ">
+                                                        Coimbatore,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/4.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Madurai,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/5.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Ooty,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/6.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Kodaikanal,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/7.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Mysuru(Mysore),
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/Next-trip/8.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Kovalam,
+                                                        India</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleNextTripLarge"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleNextTripLarge"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Small screen -->
+            <div class="d-block d-sm-none">
+                <div class="row">
+                    <div id="carouselExampleNextTripSmall" class="carousel slide mt-3">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/1.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Bengaluru, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/2.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Trivandrum, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/3.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2 ">
+                                                    Coimbatore, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/4.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Madurai, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/5.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Ooty, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/6.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Kodaikanal, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card text-bg-light">
+                                    <img src="./images/Next-trip/7.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <a href="">
+                                            <h1
+                                                class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                Mysuru(Mysore), India</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/Next-trip/8.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Kovalam, India</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleNextTripSmall" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleNextTripSmall" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top destinations.........................................................-->
+        <section class="destinations" id="destinations" style="margin-top: 80px;">
+            <h3>Top destinations for your next vacation</h3>
+            <!-- Large Screen -->
+            <div class="d-none d-sm-block">
+                <div id="carouselExampleDestinationLarge" class="carousel slide mt-3">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/1.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Yellowstone <br> National Park, WY</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/2.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Punta Cana,<br> Dominican <br> Republic</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/3.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2 ">
+                                                        Orlando, FL</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/4.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Sedona, AZ</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/5.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Yosemite National <br> Park, CA</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/6.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        New York City, NY</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/7.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        Las Vegas, NV</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a href="">
+                                        <div class="overall">
+                                            <div class="card text-bg-light">
+                                                <img src="./images/destinations/8.jpg" class="card-img" alt="...">
+                                                <div class="card-img-overlay">
+                                                    <h1
+                                                        class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                        London, UK</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleDestinationLarge" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleDestinationLarge" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Small Screen -->
+            <div class="d-block d-sm-none">
+                <div class="row">
+                    <div id="carouselExampleDestinationSmall" class="carousel slide mt-3">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/1.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Yellowstone <br> National Park, WY</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/2.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Punta Cana,<br> Dominican <br> Republic</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/3.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2 ">
+                                                    Orlando, FL</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/4.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Sedona, AZ</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/5.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    Yosemite National <br> Park, CA</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/6.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    New York City, NY</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card text-bg-light">
+                                    <img src="./images/destinations/7.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                        <a href="" class="sslink">
+                                            <h1
+                                                class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                Las Vegas, NV</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="overall">
+                                    <div class="card text-bg-light">
+                                        <img src="./images/destinations/8.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <a href="" class="sslink">
+                                                <h1
+                                                    class="card-title fw-bold position-absolute bottom-0 start-0 text-light ms-2">
+                                                    London, UK</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleDestinationSmall" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleDestinationSmall" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Rentals................................................ -->
+
+        <section class="next-trip" style="margin-top: 80px;">
+            <h1 class="fw-bold">Home Rentals Near You</h1>
+            <!-- Large screen -->
+            <div class="d-none d-sm-block">
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <p class="fs-4 mt-3 text-center">We think you'd enjoy these homes for a quick trip out of town.
+                        </p>
+                    </div>
+                    <div class="col-lg-9">
+                        <div id="carouselExampleRentalLarge" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <a href="" class="sslink">
+                                                <div class="w-100">
+                                                    <div class="card">
+                                                        <img src="./images/rentals/1.jpg" class="card-img-top imagz"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text fw-bold">Rentals in Vagamon <br> 33
+                                                                rentals</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="" class="sslink">
+                                                <div class="w-100">
+                                                    <div class="card">
+                                                        <img src="./images/rentals/2.jpg" class="card-img-top imagz"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text fw-bold">Rentals in Kumarakom <br> 18
+                                                                rentals</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="" class="sslink">
+                                                <div class="w-100">
+                                                    <div class="card">
+                                                        <img src="./images/rentals/3.jpg" class="card-img-top imagz"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text fw-bold">Rentals in Alappuzha <br> 187
+                                                                rentals</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <a href="" class="sslink">
+                                                <div class="w-100">
+                                                    <div class="card">
+                                                        <img src="./images/rentals/4.jpg" class="card-img-top imagz"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text fw-bold">Rentals in Ooty<br> 41 rentals
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="" class="sslink">
+                                                <div class="w-100">
+                                                    <div class="card">
+                                                        <img src="./images/rentals/5.jpg" class="card-img-top imagz"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text fw-bold">Rentals in Kodaikanal <br> 49
+                                                                rentals </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="" class="sslink">
+                                                <div class="w-100">
+                                                    <div class="card">
+                                                        <img src="./images/rentals/6.jpg" class="card-img-top imagz"
+                                                            alt="...">
+                                                        <div class="card-body">
+                                                            <p class="card-text fw-bold">Rentals in Pallivasal <br> 22
+                                                                rentals</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleRentalLarge" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleRentalLarge" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Small Screen -->
+            <div class="d-block d-sm-none">
+                <div class="row">
+                    <p class="fs-4">We think you'd enjoy these homes for a quick trip out of town.</p>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleRentalSmall" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="w-100">
+                                    <div class="card">
+                                        <img src="./images/rentals/1.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="sslink">
+                                                <p class="card-text fw-bold">Rentals in Vagamon <br> 33 rentals</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="w-100">
+                                    <div class="card">
+                                        <img src="./images/rentals/2.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="sslink">
+                                                <p class="card-text fw-bold">Rentals in Kumarakom <br> 18 rentals</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="w-100">
+                                    <div class="card">
+                                        <img src="./images/rentals/3.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="sslink">
+                                                <p class="card-text fw-bold">Rentals in Alappuzha <br> 187 rentals</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="w-100">
+                                    <div class="card">
+                                        <img src="./images/rentals/4.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="sslink">
+                                                <p class="card-text fw-bold">Rentals in Ooty<br> 41 rentals</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="w-100">
+                                    <div class="card">
+                                        <img src="./images/rentals/5.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="sslink">
+                                                <p class="card-text fw-bold">Rentals in Kodaikanal <br> 49 rentals </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="w-100">
+                                    <div class="card">
+                                        <img src="./images/rentals/6.jpg" class="card-img-top imagz" alt="...">
+                                        <div class="card-body">
+                                            <a href="" class="sslink">
+                                                <p class="card-text fw-bold">Rentals in Pallivasal <br> 22 rentals</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRentalSmall"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRentalSmall"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travellers Choice........................... -->
+        <section class="travellers-choice" style="margin-top: 40px;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div style="text-align: center;" class="pt-5">
+                            <img src="./images/logo_yellow.svg" style="height: 30%; width: 30%;" alt="">
+                            <h1 class="fw-bold">Travelers' Choice <br> Best of the Best</h1>
+                            <p>Our top 1% of places, stays, eats, <br> and experiences—decided by you.</p>
+                            <br>
+                            <button type="button" class="btn btn-dark rounded-pill">See the winners</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="p-5">
+                            <div class="row">
+                                <img src="./images/trvlrschoice.jpg" class="d-none d-sm-block" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Trendin in travel................................................................. -->
+        <section class="trending" id="trending" style="margin-top: 80px;">
+            <div class="row">
+                <h2 class="fw-bold">Trending in Travel</h2>
+            </div>
+            <div class="row">
+                <div class="tabs">
+                    <!-- Summer destinations -->
+                    <input type="radio" class="tabs-radio" name="tabs-ex" id="tab1" checked>
+                    <label for="tab1" class="tabs-label">Summer Destinations</label>
+                    <div class="tabs-content mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="" class="ftlinks">Chicago</a>
+                                <br>
+                                <a href="" class="ftlinks">Myrtle Beach</a>
+                                <br>
+                                <a href="" class="ftlinks">Outer Banks</a>
+                                <br>
+                                <a href="" class="ftlinks">Martha's Vineyard</a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="" class="ftlinks">Alaska</a>
+                                <br>
+                                <a href="" class="ftlinks">Colorado</a>
+                                <br>
+                                <a href="" class="ftlinks">Wyoming</a>
+                                <br>
+                                <a href="" class="ftlinks">Canada</a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="" class="ftlinks">London</a>
+                                <br>
+                                <a href="" class="ftlinks">Dublin</a>
+                                <br>
+                                <a href="" class="ftlinks">Edinburgh</a>
+                                <br>
+                                <a href="" class="ftlinks">Ibiza</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Things To Do -->
+                    <input type="radio" class="tabs-radio" name="tabs-ex" id="tab2">
+                    <label for="tab2" class="tabs-label">Things To Do</label>
+                    <div class="tabs-content mt-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="" class="ftlinks">Boston</a>
+                                <br>
+                                <a href="" class="ftlinks">Chicago</a>
+                                <br>
+                                <a href="" class="ftlinks">Seattle</a>
+                                <br>
+                                <a href="" class="ftlinks">Nashville</a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="" class="ftlinks">New York City</a>
+                                <br>
+                                <a href="" class="ftlinks">Denver</a>
+                                <br>
+                                <a href="" class="ftlinks">Charlotte</a>
+                                <br>
+                                <a href="" class="ftlinks">Salt Lake City</a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="" class="ftlinks">London</a>
+                                <br>
+                                <a href="" class="ftlinks">Paris</a>
+                                <br>
+                                <a href="" class="ftlinks">Amsterdam</a>
+                                <br>
+                                <a href="" class="ftlinks">Barcelona</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer.................................................... -->
+        <footer class="ftr" style="margin-top: 80px; background-color: beige;">
+            <!-- Footer large -->
+            <div class="d-none d-sm-block p-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h6 class="fw-bold">About Tripadvisor</h6>
+                        <a href="" class="ftlinks">About Us</a>
+                        <br>
+                        <a href="" class="ftlinks">Press</a>
+                        <br>
+                        <a href="" class="ftlinks">Resources and Policies</a>
+                        <br>
+                        <a href="" class="ftlinks">Careers</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="fw-bold">Explore</h6>
+                        <a href="" class="ftlinks">Write a review</a>
+                        <br>
+                        <a href="" class="ftlinks">Add a place</a>
+                        <br>
+                        <a href="" class="ftlinks">Blog</a>
+                        <br>
+                        <a href="" class="ftlinks">Help Center</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="fw-bold">Do Business With us</h6>
+                        <a href="" class="ftlinks">Owners</a>
+                        <br>
+                        <a href="" class="ftlinks">Business Advantage</a>
+                        <br>
+                        <h6 class="fw-bold">Get The App</h6>
+                        <a href="" class="ftlinks">iPhone App</a>
+                        <br>
+                        <a href="" class="ftlinks">Android App</a>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>&copy, 2023 Tripadvisor LLC All rights reserved.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <a href="" class="ftlinks2 ms-2 fw-bold">Terms of Use</a>
+                        <a href="" class="ftlinks2 ms-2 fw-bold">Privacy and cookie statement</a>
+                        <a href="" class="ftlinks2 ms-2 fw-bold">Cookie consent</a>
+                        <a href="" class="ftlinks2 ms-2 fw-bold">Site map</a>
+                        <br>
+                        <a href="" class="ftlinks2 ms-2 fw-bold">How the site works</a>
+                        <a href="" class="ftlinks2 ms-2 fw-bold">Contact us</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="dropup">
+                                    <button class="btn btn-light border border-dark-subtle dropdown-toggle rounded-pill"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        $ USD
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="" class="dropdown-item">£ British Pounds</a></li>
+                                        <li><a href="" class="dropdown-item">€ Euros</a></li>
+                                        <li><a href="" class="dropdown-item">¥ Japanese Yen</a></li>
+                                        <li><a href="" class="dropdown-item">₹ Indian Rupees</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="dropup">
+                                    <button class="btn btn-light border border-dark-subtle dropdown-toggle rounded-pill"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        India
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="" class="dropdown-item">United States</a></li>
+                                        <li><a href="" class="dropdown-item">Argentina</a></li>
+                                        <li><a href="" class="dropdown-item">Brazil</a></li>
+                                        <li><a href="" class="dropdown-item">Spain</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="text-align: center;">
+                        <a href="" class="ms-3"><i class="fa-brands fa-facebook fa-2x sslink overall"></i></a>
+                        <a href="" class="ms-3"><i class="fa-brands fa-twitter fa-2x sslink overall"></i></a>
+                        <a href="" class="ms-3"><i class="fa-brands fa-square-instagram fa-2x sslink overall"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="samp position-relative">
+                        <div class="uparrow position-absolute top-0 end-0">
+                            <a href="#container"><i class="fa-solid fa-arrow-up fa-2x sslink text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Small -->
+            <div class="d-block d-sm-none p-2">
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn border border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Tripadvisor
+                        </button>
+                        <ul class="dropdown-menu border border-0">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Press</a></li>
+                            <li><a class="dropdown-item" href="#">Resources and Policies</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn border border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Explore
+                        </button>
+                        <ul class="dropdown-menu border border-0">
+                            <li><a class="dropdown-item" href="#">Help Center</a></li>
+                            <li><a class="dropdown-item" href="#">Tripadvisor Plus</a></li>
+                            <li><a class="dropdown-item" href="#">Travel Articles</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn border border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Do Business With Us
+                        </button>
+                        <ul class="dropdown-menu border border-0">
+                            <li><a class="dropdown-item" href="#">Owners</a></li>
+                            <li><a class="dropdown-item" href="#">Business Advantage</a></li>
+                            <li><a class="dropdown-item" href="#">Advertise With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dropdown">
+                        <button class="btn border border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Get the App
+                        </button>
+                        <ul class="dropdown-menu border border-0">
+                            <li><a class="dropdown-item" href="#">iPhone App</a></li>
+                            <li><a class="dropdown-item" href="#">Android App</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dropup">
+                        <button class="btn btn-light border border-dark-subtle dropdown-toggle rounded-pill w-100 mt-3"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            $ USD
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">£ British Pounds</a></li>
+                            <li><a href="" class="dropdown-item">€ Euros</a></li>
+                            <li><a href="" class="dropdown-item">¥ Japanese Yen</a></li>
+                            <li><a href="" class="dropdown-item">₹ Indian Rupees</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="dropup">
+                        <button class="btn btn-light border border-dark-subtle dropdown-toggle rounded-pill w-100 mt-3"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            India
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">United States</a></li>
+                            <li><a href="" class="dropdown-item">Argentina</a></li>
+                            <li><a href="" class="dropdown-item">Brazil</a></li>
+                            <li><a href="" class="dropdown-item">Spain</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="text-align: center;" class="mt-3">
+                        <a href="" class="ms-3"><i class="fa-brands fa-facebook fa-2x sslink overall"></i></a>
+                        <a href="" class="ms-3"><i class="fa-brands fa-twitter fa-2x sslink overall"></i></a>
+                        <a href="" class="ms-3"><i class="fa-brands fa-square-instagram fa-2x sslink overall"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="" class="ftlinks2 ms-2 fw-bold">Terms of Use</a>
+                    <a href="" class="ftlinks2 ms-2 fw-bold">Privacy and cookie statement</a>
+                    <a href="" class="ftlinks2 ms-2 fw-bold">Cookie consent</a>
+                    <a href="" class="ftlinks2 ms-2 fw-bold">Site map</a>
+                    <br>
+                    <a href="" class="ftlinks2 ms-2 fw-bold">How the site works</a>
+                    <a href="" class="ftlinks2 ms-2 fw-bold">Contact us</a>
+                </div>
+                <div class="row">
+                    <div style="width: 100%; height: 15%; text-align: center;">
+                        <figure>
+                            <img src="./images/logo2svg.svg" style="height: 20%; width: 20%;" alt="">
+                            <figcaption>&copy, 2023 Tripadvisor LLC All rights reserved.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
